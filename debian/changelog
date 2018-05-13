@@ -1,0 +1,5 @@
+gr-limesdr (0.9~beta-1) unstable; urgency=medium
+
+  * New Gnuradio OOT hardware support (git a283ec4) (Closes: #896842)
+
+ -- A. Maitland Bottoms <bottoms@debian.org>  Sat, 12 May 2018 22:56:24 -0400

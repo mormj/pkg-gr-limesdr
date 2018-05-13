@@ -1,0 +1,28 @@
+From d3f9f769cd49be60f6f8b2fbc12df65dbebf4f56 Mon Sep 17 00:00:00 2001
+From: "A. Maitland Bottoms" <bottoms@debian.org>
+Date: Sun, 29 Apr 2018 12:36:40 -0400
+Subject: [PATCH] library version specification
+
+---
+ lib/CMakeLists.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/lib/CMakeLists.txt b/lib/CMakeLists.txt
+index 0d3e017..080c1b9 100644
+--- a/lib/CMakeLists.txt
++++ b/lib/CMakeLists.txt
+@@ -48,7 +48,10 @@ target_link_libraries(
+   ${LIMESUITE_LIB})
+   
+ set_target_properties(
+-  gnuradio-limesdr PROPERTIES DEFINE_SYMBOL "gnuradio_limesdr_EXPORTS")
++  gnuradio-limesdr PROPERTIES
++  VERSION 0.9
++  SOVERSION 0
++  DEFINE_SYMBOL "gnuradio_limesdr_EXPORTS")
+ 
+ if(APPLE)
+     set_target_properties(
+-- 
+2.11.0
+

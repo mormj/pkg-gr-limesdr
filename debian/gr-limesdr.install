@@ -1,0 +1,6 @@
+usr/include/*
+usr/lib/*/libgnuradio-limesdr.so
+usr/lib/*/cmake/*
+usr/lib/python*
+usr/share/gnuradio/grc/blocks/*
+usr/share/doc/gr-limesdr/*

@@ -1,0 +1,46 @@
+Source: gr-limesdr
+Section: libs
+Priority: optional
+Maintainer: A. Maitland Bottoms <bottoms@debian.org>
+Build-Depends: cmake,
+               debhelper (>= 10),
+               doxygen,
+               gnuradio-dev (>= 3.7.12),
+               liblimesuite-dev,
+               pkg-config,
+	       python-dev,
+               swig
+Standards-Version: 4.1.4
+Homepage: https://github.com/analogdevicesinc/gr-limesdr.git
+Vcs-Browser: https://salsa.debian.org/debian/gr-limesdr
+Vcs-Git: https://salsa.debian.org/debian/gr-limesdr.git
+
+Package: gr-limesdr
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: libgnuradio-limesdr0 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Description: LimeSDR blocks for GnuRadio
+ LimeSDR is a low cost, open source software defined radio (SDR) platform that
+ can be used to support just about any type of wireless communication standard.
+ .
+ Currently this plugin supports LimeSDR-USB and LimeSDR-Mini boards.
+ .
+ The gr-limesdr blocks for GnuRadio can be used to create flowgraphs that
+ interface LimeSDR devices through liblimesuite.
+ .
+ This package contains the development files.
+
+Package: libgnuradio-limesdr0
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: LimeSDR blocks for GnuRadio (runtime library)
+ LimeSDR is a low cost, open source software defined radio (SDR) platform that
+ can be used to support just about any type of wireless communication standard. 
+ .
+ Currently this plugin supports LimeSDR-USB and LimeSDR-Mini boards.
+ .
+ The gr-limesdr blocks for GnuRadio can be used to create flowgraphs that
+ interface LimeSDR devices through liblimesuite.
+ .
+ This package contains the shared library.
