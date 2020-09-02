@@ -9,7 +9,8 @@ Build-Depends: cmake,
                liblimesuite-dev,
                pkg-config,
 	       python-dev,
-               swig
+               swig,
+               liborc-0.4-dev
 Standards-Version: 4.1.4
 Homepage: https://github.com/analogdevicesinc/gr-limesdr.git
 Vcs-Browser: https://salsa.debian.org/debian/gr-limesdr
