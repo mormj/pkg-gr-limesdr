@@ -3,8 +3,12 @@
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 %:
-	dh $@ --with python2
-	find .
+	dh $@ --with python3
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DLIB_SUFFIX=/$(DEB_HOST_MULTIARCH)
+	dh_auto_configure -- -DLIB_SUFFIX=/$(DEB_HOST_MULTIARCH)  -DCMAKE_BUILD_TYPE="Release"
+
+override_dh_install:
+	rm -rf debian/tmp/usr/lib/python3/dist-packages/gnuradio/limesdr/*.pyc
+	rm -rf debian/tmp/usr/lib/python3/dist-packages/gnuradio/limesdr/*.pyo
+	dh_install
