@@ -5,7 +5,7 @@ Maintainer: A. Maitland Bottoms <bottoms@debian.org>
 Build-Depends: cmake,
                debhelper (>= 10),
                doxygen,
-               gnuradio-dev (>= 3.7.12),
+               gnuradio-dev (>= 3.8.0),
                liblimesuite-dev,
                pkg-config,
 	       python-dev,
