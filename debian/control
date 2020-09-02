@@ -11,6 +11,7 @@ Build-Depends: cmake,
 	       python-dev,
                swig,
                liborc-0.4-dev
+               python3-six
 Standards-Version: 4.1.4
 Homepage: https://github.com/analogdevicesinc/gr-limesdr.git
 Vcs-Browser: https://salsa.debian.org/debian/gr-limesdr
