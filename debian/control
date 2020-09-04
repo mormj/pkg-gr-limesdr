@@ -3,7 +3,7 @@ Section: libs
 Priority: optional
 Maintainer: A. Maitland Bottoms <bottoms@debian.org>
 Build-Depends: cmake,
-               debhelper-compat (>= 12),
+               debhelper-compat (= 12),
                dh-python,
                doxygen,
                gnuradio-dev (>= 3.8),
