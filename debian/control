@@ -12,7 +12,7 @@ Build-Depends: cmake,
 	           python3-dev,
                swig,
                liborc-0.4-dev,
-               python3-six
+               python3-six,
                swig
 Standards-Version: 4.4.1
 Homepage: https://github.com/analogdevicesinc/gr-limesdr.git
